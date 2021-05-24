@@ -34,7 +34,7 @@ body {
   color: var(--greyBlue--neutral);
 }
 
-/*****Heading****/
+/*****Header****/
 header {
   background-image: url("../images/bg-hero-desktop.svg");
   background-color: var(--paleCyan--neutral);
@@ -102,5 +102,62 @@ header {
   }
   .btn--secondary {
     width: 11rem;
+  }
+}
+
+/************Testimonial***********/
+.testimonial {
+  margin-top: 10rem;
+}
+.card {
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.2rem 1px var(--greyBlue--neutral);
+  overflow: hidden;
+}
+
+.card__right {
+}
+.card__img {
+  width: 25vw;
+}
+.card__heading {
+  margin-bottom: 2rem;
+}
+.card__para {
+  line-height: 1.7;
+}
+@media screen and (min-width: 1020px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    margin: 5rem 18rem;
+    padding: 2rem 4rem;
+  }
+  .card__left {
+    margin-top: 8rem;
+    margin-right: 18rem;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .card {
+    text-align: center;
+    margin: 2rem 7rem;
+    display: grid;
+    grid-template-rows: repeat(2, 100%);
+    padding: 2rem 0;
+  }
+  .card__left {
+    margin: 0 4rem;
+  }
+  .card__img {
+    width: 23rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .card {
+    margin: 2rem;
+  }
+  .card__left {
+    margin: 0 0.5rem;
   }
 }
