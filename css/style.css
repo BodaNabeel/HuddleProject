@@ -192,3 +192,8 @@ header {
     font-size: 2rem;
   }
 }
+
+/**********Footer********/
+.footer__logo {
+  fill: yellow;
+}
