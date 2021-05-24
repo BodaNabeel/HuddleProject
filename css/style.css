@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans";
   overflow-x: hidden;
 }
+
 /****Typography***/
 .header__heading {
   font-size: 5rem;
@@ -194,6 +195,48 @@ header {
 }
 
 /**********Footer********/
+.footer {
+  background-color: var(--darkCyan--neutral);
+  color: white;
+}
 .footer__logo {
-  fill: yellow;
+  color: white;
+  background-color: white;
+  margin: 4rem 0 0rem 15rem;
+}
+.link__items {
+  list-style: none;
+}
+.url {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 30%);
+
+  padding: 4rem 14rem;
+}
+.location,
+.telephone,
+.e-mail {
+  display: grid;
+  grid-template-columns: min-content 90%;
+  grid-gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.link__items {
+  margin-bottom: 1rem;
+}
+.social-icon {
+  display: inline;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+}
+.container__detail--logo {
+  color: red;
 }
