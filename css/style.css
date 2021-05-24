@@ -28,6 +28,10 @@ body {
   width: 20rem;
   background-color: var(--pink-primary);
   color: #fff;
+  transition: background-color 0.5s;
+}
+.btn--primary:hover {
+  background-color: hsl(322, 55%, 62%);
 }
 .btn--secondary {
   width: 15rem;
@@ -111,7 +115,7 @@ header {
 }
 .card {
   border-radius: 1rem;
-  box-shadow: 0rem 0rem 0.2rem 1px var(--greyBlue--neutral);
+  box-shadow: 0rem 0rem 0.4rem 0.5px #ccc;
   overflow: hidden;
 }
 
