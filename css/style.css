@@ -115,7 +115,7 @@ header {
 }
 .card {
   border-radius: 1rem;
-  box-shadow: 0rem 0rem 0.4rem 0.5px #ccc;
+  box-shadow: 0rem 0rem 1rem 0.5px rgb(236, 235, 235);
   overflow: hidden;
 }
 
@@ -163,5 +163,36 @@ header {
   }
   .card__left {
     margin: 0 0.5rem;
+  }
+}
+
+/******Special Box*********/
+.box {
+  box-shadow: 0rem 0rem 1rem 0.5px rgb(236, 235, 235);
+  width: max-content;
+  padding: 4rem 7rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.box__heading {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.box__btn {
+  margin-left: 7rem;
+}
+@media screen and (max-width: 570px) {
+  .box {
+    padding: 4rem 0.2rem;
+    width: 34rem;
+  }
+  .box__heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 434px) {
+  .box {
   }
 }
